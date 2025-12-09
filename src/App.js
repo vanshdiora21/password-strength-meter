@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import "./App.css";
+import PasswordStrength from "./PasswordStrength";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ padding: "32px", textAlign: "center" }}>
+      <h1>React Password Strength Meter</h1>
+      <p style={{ maxWidth: "500px", margin: "0 auto 16px" }}>
+        Type a password to see its strength based on length, lowercase,
+        uppercase, numbers, and special characters.
+      </p>
+      <PasswordStrength />
     </div>
   );
 }
